@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  /* Colors*/
+--white: hsl(0, 0%, 100%);
+--stone-100: hsl(30, 54%, 90%);
+--stone-150: hsl(30, 18%, 87%);
+--stone-600: hsl(30, 10%, 34%);
+--stone-900: hsl(24, 5%, 18%);
+--brown-800: hsl(14, 45%, 36%);
+--rose-800: hsl(332, 51%, 32%);
+--rose-50: hsl(330, 100%, 98%);
+--grey: #9a9a9a;
+}
+
+body{
+  background-color: var(--stone-100);
+  font-family: "outfit", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10vh 0;
+}
+
+hr{
+  height: 1px;
+  border: 1px solid var(--grey); 
+  height: 1px; width: 100%;
+  width: 100%;
+}
+
+.instruction-section{
+  margin-bottom: 1rem;
+}
+
+p, li{
+  font-size: 1.1rem;
+  color: var(--stone-600);
+}
+
+h2, ol li::marker, .nutrient-value{
+  color: var(--brown-800);
+  font-weight: bold;
+}
+
+ul > li::marker, h4{
+  color:var(--rose-800);
+}
+
+strong, h1{
+  color: var(--stone-900);
+}
+
+li{
+  margin-left: 2rem;
+}
+
+h1,h2{
+  font-family: "Young Serif", serif;
+}
+
+ main{
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 2rem;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  width: 60vw;
+  height: 90%;
+}
+
+.omelette{
+  width: 100%;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.intro-header{
+  font-size: 3.2rem;
+}
+
+.intro-section{
+  margin: 1rem 0;
+}
+
+.prep-time-section{
+  background-color: var(--rose-50);
+  padding: 1rem 1rem 0 1rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.prep-time-header, li, .intro-header, .nutrition-description{
+  margin-bottom: 1rem;
+}
+
+.header{
+  margin: 1rem 0;
+}
+
+.nutrition-box{
+  width: 100%;
+}
+
+.nutrition-section{
+  display: flex;
+  width: 100%;
+}
+
+.nutrition-description
+{
+  margin: 1rem 0;
+}
+
+.nutrition-info-value{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+.nutrient-name{
+  flex: 1;
+}
+
+.nutrient-value{
+  flex: 1;
+}
+
+@media screen and (max-width: 375px){
+  body{
+    padding: 0;
+    background-color: var(--white);
+  }
+
+  .omelette{
+    height: 20rem;
+    object-fit: cover;
+  }
+
+  main{
+    width: 100vw;
+    height: 100%;
+    padding: 0;
+  }
+
+  .instruction-section,.ingredient-section,.intro-section,.prep-time-section,.nutrition-section{
+    padding: 2rem;
+  }
+
+  .intro-header{
+    font-size: 2.6rem;
+  }
+}
